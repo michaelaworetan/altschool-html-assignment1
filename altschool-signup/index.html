@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AltSchool Application Form</title>
+
+  <!-- Typography & Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- CSS Stylesheet -->
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+  <header class="header">
+    <nav class="navigation">
+      <ul class="nav-list">
+        <li class="nav-item">Already an AltSchooler? <a href="https://portal.altschoolafrica.com/" class="nav-link">Sign In!</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero-section">
+      <figure class="hero-image">
+        <img src="./assets/Alt School Picture.png" alt="Academic Icon">
+      </figure>
+      <h1 class="hero-title">Learn highly sought-after skills without hassle.</h1>
+      <div class="social-links">
+        <a href="https://x.com/altschoolafrica" target="_blank"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/altschoolafrica/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/AltSchoolAfrica" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.linkedin.com/school/altschoolafrica/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      </div>
+
+      <p class="footer-text">&copy; 2024 AltSchool Africa. All rights reserved.</p>
+    </section>
+
+    <section class="form-section">
+      <form action="#" method="get" class="signup-form">
+        <h2 class="form-title">Signup</h2>
+        <p class="form-description">Take the next steps to apply at AltSchool Africa</p>
+
+        <div class="form-group">
+          <div class="form-field">
+            <label for="first_name">First Name</label>
+            <input type="text" name="first_name" id="first_name" placeholder="Enter first name" required>
+          </div>
+          <div class="form-field">
+            <label for="last_name">Last Name</label>
+            <input type="text" name="last_name" id="last_name" placeholder="Enter last name" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-field">
+            <label for="email_address">Email Address</label>
+            <input type="email" name="email_address" id="email_address" placeholder="Enter email address" required>
+          </div>
+          <div class="form-field">
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" required>
+              <option value="" disabled selected>Select gender</option>
+              <option value="Female">Female</option>
+              <option value="Male">Male</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-field">
+            <label for="date_of_birth">Date of Birth</label>
+            <input type="date" name="date_of_birth" id="date_of_birth" required>
+          </div>
+          <div class="form-field">
+            <label for="phone_number">Phone Number</label>
+            <input type="tel" name="phone_number" id="phone_number" placeholder="Phone number" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-field">
+            <label for="country">Country</label>
+            <input type="text" name="country" id="country" placeholder="Country of Residence" required>
+          </div>
+          <div class="form-field">
+            <label for="state_city">State/City of Residence</label>
+            <input type="text" name="state_city" id="state_city" placeholder="State of residence" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="form-field">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Password" required>
+          </div>
+          <div class="form-field">
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" name="confirm_password" id="confirm_password" placeholder="Confirm password"
+              required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="referral_source">How did you hear about us? (Optional):</label>
+          <select name="referral_source" id="referral_source">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Social Media">Social Media</option>
+            <option value="Friend">Friend</option>
+            <option value="Advertisement">Advertisement</option>
+          </select>
+        </div>
+
+        <p class="terms-text">
+          By clicking continue, I agree to <a href="https://altschoolafrica.com/terms-and-conditions">Terms of Use</a>
+          and acknowledge that I have read the
+          <a href="https://altschoolafrica.com/privacy-policy">Privacy Policy.</a>
+        </p>
+
+        <button type="submit" class="submit-button">Submit</button>
+      </form>
+    </section>
+  </main>
+</body>
+
+</html>
